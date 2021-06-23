@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../../dist/js/index.js" defer></script>
+    <title>학점 계산기</title>
+  </head>
+  <body>
+    <section class="wrap">
+      <form>
+        <div id="classes">
+          <div class="line">
+            <label for="score">성적</label>
+            <input name="score" type="text" />
+            <label for="unit">단위수</label>
+            <input name="unit" type="text" />
+          </div>
+          <div class="line">
+            <label for="score">성적</label>
+            <input name="score" type="text" />
+            <label for="unit">단위수</label>
+            <input name="unit" type="text" />
+          </div>
+        </div>
+
+        <div class="buttons">
+          <button onclick="add(event)">추가</button>
+          <button onclick="execute(event)">계산</button>
+        </div>
+
+        <div class="line">
+          <label for="result">총점</label>
+          <input name="result" type="text" />
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
