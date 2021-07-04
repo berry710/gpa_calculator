@@ -27,12 +27,13 @@ function add(e) {
   const scoreInput = document.createElement("input");
   scoreInput.setAttribute("name", "score");
   scoreInput.setAttribute("type", "text");
+  scoreInput.setAttribute("inputmode", "decimal");
   const unitLabel = document.createElement("label");
   unitLabel.setAttribute("for", "unit");
   unitLabel.textContent = "단위수";
   const unitInput = document.createElement("input");
   unitInput.setAttribute("name", "unit");
-  unitInput.setAttribute("type", "text");
+  unitInput.setAttribute("type", "number");
   const newDiv = document.createElement("div");
   newDiv.setAttribute("class", "line");
   newDiv.append(scoreLabel, scoreInput, unitLabel, unitInput);
