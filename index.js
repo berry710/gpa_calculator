@@ -44,6 +44,7 @@ function add(e) {
   var unitInput = document.createElement("input");
   unitInput.setAttribute("name", "unit");
   unitInput.setAttribute("type", "number");
+  unitInput.setAttribute("pattern", "[0-9]*");
   var newDiv = document.createElement("div");
   newDiv.setAttribute("class", "line");
   newDiv.append(scoreLabel, scoreInput, unitLabel, unitInput);
